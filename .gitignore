@@ -1,0 +1,71 @@
+# Sistema operativo macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de icono del sistema
+Icon
+._*
+
+# Thumbnails generados por el sistema
+._.DS_Store
+
+# Archivos de almacenamiento de atributos extendidos
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.metadata_never_index
+
+# Carpetas de almacenamiento de atributos extendidos
+.PKInstallSandboxManager
+.PKInstallSandboxManager-SystemSoftware
+
+# Configuración de temporales y swaps
+.TemporaryItems
+.apdisk
+
+# Archivos de configuración de editores y entornos de desarrollo
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Archivos temporales de compilación
+*.log
+*.tmp
+*.swp
+
+# Dependencias del proyecto
+node_modules/
+bower_components/
+
+# Archivos de configuración de herramientas de construcción
+dist/
+build/
+
+
+# Archivos de configuración de FTP y SSH
+*.pem
+*.pub
+*.key
+
+# Archivos de configuración de servidores locales
+*.env
+.env.local
+.env.*.local
+
+# Archivos de configuración de IDEs
+*.iml
+*.ipr
+*.iws
+
+# Archivos y carpetas de cobertura de pruebas
+coverage/
+
+# Archivos de configuración de herramientas de análisis estático
+.DS_Store
+.eslintcache
+
+# Carpetas de caché
+.cache/

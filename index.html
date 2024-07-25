@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiendita Clothes</title>
+  <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+</head>
+<body>
+  <header class="header-nav">
+    <nav class="navbar">
+      <!-- https://via.placeholder.com/50 -->
+      <img src="./assets/image/tiendita_clothes.png" alt="Tiendita Clothes" width="40" height="40" class="brand-img">
+  
+      <img src="./assets/image/menu-bars.svg" alt="Nav Menu" width="35px" height="35px" class="menu-bars" id="nav_btn">
+      <ul class="nav-menu">
+        <li><a href="#home" onclick="toggleNavbar()">Home</a></li>
+        <li><a href="#ropa" onclick="toggleNavbar()">Ropa</a></li>
+        <li><a href="#accesorios" onclick="toggleNavbar()">Mochilas</a></li>
+        <li><a href="#accesorios" onclick="toggleNavbar()">Skate</a></li>
+        <li><a href="#ropa" onclick="toggleNavbar()">Gorras</a></li>
+        <li><a href="#tenis-calzado" onclick="toggleNavbar()">Tenis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-image">
+      <div class="text-hero">
+        <h2 class="font-cursive">Tienda Clothes</h2>
+        <p>Ropa al mejor precio!</p>
+        <p>
+          <button href="#" class="btn-discount">50% de Descuento</button>
+        </p>
+      </div>
+    </section>
+
+    <section id="tenis-calzado" class="products-container">
+      <h2>Tenis / Calzado</h2>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Tenis+Nike" alt="Tenis Nike">
+        <div class="description">
+          <div class="name">Tenis Nike Air</div>
+          <div class="price">$99.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Adidas+Boost" alt="Adidas Boost">
+        <div class="description">
+          <div class="name">Adidas Boost</div>
+          <div class="price">$89.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Puma+RS-X" alt="Puma RS-X">
+        <div class="description">
+          <div class="name">Puma RS-X</div>
+          <div class="price">$79.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Vans+Old+Skool" alt="Vans Old Skool">
+        <div class="description">
+          <div class="name">Vans Old Skool</div>
+          <div class="price">$69.90</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="ropa" class="products-container">
+      <h2>Playeras, Ropa, Gorras</h2>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Playera+Adidas" alt="Playera Adidas">
+        <div class="description">
+          <div class="name">Playera Adidas</div>
+          <div class="price">$29.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Gorra+New+Era" alt="Gorra New Era">
+        <div class="description">
+          <div class="name">Gorra New Era</div>
+          <div class="price">$19.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Sudadera+Nike" alt="Sudadera Nike">
+        <div class="description">
+          <div class="name">Sudadera Nike</div>
+          <div class="price">$49.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Short+Puma" alt="Short Puma">
+        <div class="description">
+          <div class="name">Short Puma</div>
+          <div class="price">$24.90</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="accesorios" class="products-container">
+      <h2>Tablas, Trucks, Llantas, Mochilas</h2>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Tabla+Element" alt="Tabla Element">
+        <div class="description">
+          <div class="name">Tabla Element</div>
+          <div class="price">$99.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Trucks+Independent" alt="Trucks Independent">
+        <div class="description">
+          <div class="name">Trucks Independent</div>
+          <div class="price">$59.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Llantas+Spitfire" alt="Llantas Spitfire">
+        <div class="description">
+          <div class="name">Llantas Spitfire</div>
+          <div class="price">$39.90</div>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://via.placeholder.com/300?text=Mochila+Vans" alt="Mochila Vans">
+        <div class="description">
+          <div class="name">Mochila Vans</div>
+          <div class="price">$49.90</div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+
+
+  <script>
+    const nav_btn = document.getElementById('nav_btn');
+    let nav = document.getElementsByClassName('navbar')[0];
+
+    nav_btn.addEventListener('click', function(e) {
+      toggleNavbar();
+    });
+
+    function toggleNavbar(){
+      if(nav.classList.contains('active')) {
+        nav.classList.remove('active');
+      } else {
+        nav.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

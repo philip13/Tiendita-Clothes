@@ -9,8 +9,8 @@
   z-index: 1;
 }
 body, html{
-  height: 100%;
-  /* scroll-behavior: smooth; */
+  /* height: 100%; */
+  scroll-behavior: smooth;
 }
 /* RESET Styles */
 
@@ -21,10 +21,13 @@ body, html{
   font-weight: 600;
   width: 100%;
 
+  position: sticky;
   position: fixed;
   top: 0;
   z-index: 2;
-  overflow: hidden;
+  /* overflow: hidden; */
+
+  box-shadow: 0 3px 4px rgba(0,0,0,0.1); 
 }
 
 
@@ -38,7 +41,7 @@ body, html{
 }
 
 .navbar {
-  background-color: #51abb2;
+  background-color: 51abb2;
   width: 100%;
   min-height: 50px;
   padding: 5px 15px;
@@ -54,14 +57,19 @@ body, html{
   float: right;
   margin-top: 5px;
   padding: 5px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border: 1px #e6e0cc solid;
 }
 
 .nav-menu {
   width: 100%;
   color: #303030;
+}
+
+.brand-img{
+  width: 50px;
+  height: 50px;
 }
 
 .nav-menu a {
@@ -132,6 +140,8 @@ body, html{
   margin-right: auto;
   width: 80%;
   margin-bottom: 15px;
+
+  box-shadow: 5px 4px 4px rgba(31, 67, 69, 0.25);
 }
 
 .product img{

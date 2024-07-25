@@ -17,7 +17,7 @@ Tiendita Clothes es una tienda en línea que ofrece una variedad de productos de
 
 ## Captura de Pantalla
 
-![Captura de Pantalla](.tienda-online/assets/image/tiendita-clothes-screen.png)
+<img src="https://github.com/philip13/Tiendita-Clothes/blob/main/assets/image/tiendita-clothes-screen.png" alt="captura del proyecto"/>
 
 ## Estructura del Proyecto
 
